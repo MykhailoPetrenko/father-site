@@ -1,0 +1,78 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-slick
+
+PATH: 
+  E:\Programming\Projects\React\father-site\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-13\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\Mykhailo\AppData\Local\Microsoft\WindowsApps;C:\Users\Mykhailo\AppData\Roaming\npm;C:\Users\Mykhailo\.dotnet\tools;E:\Microsoft VS Code\bin;C:\Users\Mykhailo\AppData\Local\Yarn\bin;C:\Users\Mykhailo\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.19.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'E:\Programming\Projects\React\father-site\node_modules\node-sass\vendor\win32-x64-72\binding.node'
+
+npm manifest: 
+  {
+    "name": "webpack-typescript-react-sass-boilerplate",
+    "description": "A boilerplate showing how webpack, TypeScript, React, and Sass might work together",
+    "license": "MIT",
+    "repository": "https://github.com/patosai/webpack-typescript-react-sass-boilerplate",
+    "version": "0.0.1",
+    "private": false,
+    "dependencies": {
+      "@types/react": "^16.8.18",
+      "@types/react-dom": "^16.8.4",
+      "@types/react-router-dom": "^5.1.7",
+      "awesome-typescript-loader": "^5.2.1",
+      "browser-sync": "^2.26.5",
+      "file-loader": "^6.2.0",
+      "mini-css-extract-plugin": "^0.7.0",
+      "node-sass": "^4.12.0",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6",
+      "react-router-dom": "^5.2.0",
+      "sass-loader": "^7.1.0",
+      "source-map-loader": "^0.2.4",
+      "typescript": "^3.4.5",
+      "url-loader": "^4.1.1",
+      "webpack": "^4.32.2",
+      "webpack-cli": "^3.3.2",
+      "webpack-dev-server": "^3.4.1"
+    },
+    "devDependencies": {
+      "@types/react": "^16.8.18",
+      "@types/react-dom": "^16.8.4",
+      "awesome-typescript-loader": "^5.2.1",
+      "browser-sync": "^2.26.5",
+      "browser-sync-webpack-plugin": "^2.3.0",
+      "css-loader": "^2.1.1",
+      "mini-css-extract-plugin": "^0.7.0",
+      "node-sass": "^4.12.0",
+      "prettier": "^2.2.1",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6",
+      "sass-loader": "^7.1.0",
+      "source-map-loader": "^0.2.4",
+      "style-loader": "^2.0.0",
+      "typescript": "^3.4.5",
+      "webpack": "^4.32.2",
+      "webpack-cli": "^3.3.2",
+      "webpack-dev-server": "^3.4.1"
+    },
+    "scripts": {
+      "compile": "webpack",
+      "serve": "webpack-dev-server --open",
+      "start": "npm run serve"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

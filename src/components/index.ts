@@ -1,0 +1,8 @@
+export { default as NavBar } from './NavBar'
+export { default as Router } from './Router'
+export { default as LikeIcon } from './Icons/LikeIcon'
+export { default as SearchIcon } from './Icons/SearchIcon'
+export { default as Category } from './Category'
+export { default as PlayIcon } from './Icons/PlayIcon'
+export { default as LeftArrow } from './LeftArrow'
+export { default as SlickSlider } from './SlickSlider'

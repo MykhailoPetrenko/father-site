@@ -1,0 +1,12 @@
+.main-products{
+  margin-top: 30px;
+  padding-bottom: 100px;
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__title {
+    margin-bottom: 30px;
+    white-space: nowrap;
+  }
+}

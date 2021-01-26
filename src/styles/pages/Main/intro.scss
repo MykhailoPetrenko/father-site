@@ -1,0 +1,17 @@
+.main{
+  &-intro{
+    height: 530px;
+    position: relative;
+    &__blind{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      background: #00000070;
+    }
+    &__image{
+      height: 100%;
+      background: #314e24 url("https://m.dw.com/image/43443269_403.jpg") center ;
+    }
+  }
+}
