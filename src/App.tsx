@@ -3,10 +3,7 @@ import { NavBar, Router } from "./components";
 
 const  App = () => {
   return (
-    <>
-      <NavBar />
       <Router />
-    </>
   );
 }
 

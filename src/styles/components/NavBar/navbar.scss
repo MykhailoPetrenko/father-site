@@ -1,14 +1,14 @@
-.header{
+.header {
   flex: 0 0 auto;
   padding: 0;
   width: 100%;
-  position: absolute;
+  background-color: #243137;
+  color: $white;
+  font-size: 20px;
   z-index: 10;
   &__top {
     display: flex;
-    padding: 25px 15px;
-    background: $white;
-    margin-top: 30px;
+    padding: 20px 15px;
     &-content {
       display: flex;
       width: 100%;
@@ -16,43 +16,85 @@
       justify-content: space-between;
     }
   }
-  &-nav{
-    &__list{
+  &-nav {
+    @media screen and (max-width: 940px) {
+      li:not(:first-child) {
+        display: none;
+      }
+    }
+    &__list {
       display: flex;
       align-items: center;
     }
-    &__item{
+    &__item {
       cursor: pointer;
       margin-right: 30px;
       font-weight: 600;
-      &:hover {
-        color: #1d6e1d;
+      &--search{
+        @media screen and (max-width: 940px) {
+          display: none;
+        }
       }
-      &:last-child{
-        margin-right: 0;
+      &:hover {
+        color: #4fb68d;
       }
     }
-    &__logo{
-      &--wrapper{
+    &__logo {
+      &--wrapper {
+        color: $white;
         display: flex;
         align-items: center;
         justify-content: center;
       }
     }
-    &-icon{
-      &__logo{
+    &-icon {
+      &__logo {
         width: 42px;
         height: 42px;
       }
-      &__item{
+      &__item {
         width: 25px;
         height: 25px;
       }
     }
-    &-logo{
-      &__main {}
+    &-logo {
+      &__main {
+      }
       &__slogan {
         font-size: 12px;
+      }
+    }
+  }
+  &-search {
+    display: flex;
+    &__wrapper {
+      width: 460px;
+      @media screen and (max-width: 1100px) {
+        width: 300px;
+      }
+    }
+    &__input {
+      width: 100%;
+      border: none;
+      border-top-left-radius: 20px;
+      padding: 7px 20px;
+      border-bottom-left-radius: 20px;
+      font-size: 14px;
+      &::-webkit-input-placeholder {
+        font-size: 14px;
+        line-height: 3;
+        color: #999;
+      }
+    }
+    &__icon {
+      &--wrapper {
+        background-color: #4fb68d;
+        border-top-right-radius: 20px;
+        padding: 7px 15px;
+        border-bottom-right-radius: 20px;
+        & > svg {
+          fill: white;
+        }
       }
     }
   }

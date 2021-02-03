@@ -12,6 +12,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "out"),
     compress: true,
+    historyApiFallback: true,
     hot: true,
     port: 8080,
   },
@@ -51,7 +52,14 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader", "url-loader"],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'images',
+            },
+          },
+        ],
       },
     ],
   },

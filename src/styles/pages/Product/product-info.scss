@@ -1,0 +1,27 @@
+.product-info{
+  &__slider{
+    display: block;
+  }
+  &__image {
+    height: 100%;
+    margin: 0 auto;
+    &--wrapper{
+      height: 500px;
+    }
+  }
+  &__small-image{
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #4fb68d;
+    }
+    &--wrapper{
+      height: 100px;
+      @media screen and(max-width: 630px){
+        height: 70px;
+      }
+    }
+  }
+}

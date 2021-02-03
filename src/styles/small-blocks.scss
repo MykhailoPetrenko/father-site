@@ -11,8 +11,18 @@
   position: absolute;
   top: -49px;
   right: 0;
+  @media screen and (max-width: 768px){
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin-right: 0;
+    top: -45px;
+  }
   &--left {
     right: 40px;
+    @media screen and (max-width: 768px){
+      right: 30px;
+    }
   }
   &:last-child {
     margin-right: 0;
@@ -24,4 +34,78 @@
 }
 .sr-only {
   display: none;
+}
+.sandwich {
+  display: none;
+  z-index: 10;
+  margin-left: auto;
+  cursor: pointer;
+  height: 20px;
+  position: relative;
+  width: 25px;
+  &.is {
+    &-active {
+      .sandwich__line {
+        &--top {
+          top: 10px;
+          transform: rotate(45deg);
+        }
+        &--middle { opacity: 0; }
+        &--bottom {
+          top: 10px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &__line {
+    background-color: white;
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all linear .4s;
+    width: 100%;
+    &--top { top: 0; }
+    &--middle { top: 7px; }
+    &--bottom { top: 15px; }
+  }
+
+  @media screen and (max-width: 940px){
+    display: block;
+  }
+}
+.breadcrumbs {
+  list-style: none;
+  overflow: auto;
+  display: flex;
+  padding: 0;
+  & > * {
+    &:not(:last-child) { margin-right: 10px; }
+  }
+  &__item {
+    white-space: nowrap;
+    font-size: 11px;
+  }
+  &__link{
+    color: $tundora;
+    margin-right: 9px;
+    text-decoration: none;
+    &-wrapper{
+      display: flex;
+    }
+  }
+  &__icon{
+    width: 15px;
+    height: 15px;
+    margin: auto 0;
+  }
+  &__wrapper{
+    @media screen and (max-width: 768px){
+      margin-top: 10px;
+    }
+  }
+}
+.slick-current .product-info__small-image{
+  border: 1px solid #4fb68d;
 }

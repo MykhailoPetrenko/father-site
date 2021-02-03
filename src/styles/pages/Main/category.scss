@@ -57,11 +57,21 @@
       position: relative;
       display: flex;
       width: 400px;
+      @media screen and (max-width: 1250px){
+        width: 350px;
+      }
+      @media screen and (max-width: 1150px){
+        width: 300px;
+      }
+      @media screen and (max-width: 768px){
+        width: 100%;
+      }
       background-color: #f8f8f8;
       justify-content: space-between;
       cursor: pointer;
       &--wrapper{
-        display: inline-block;
+        display: block;
+        width: 100%;
         margin-bottom: 15px;
         &:last-child{
           margin-bottom: 0;

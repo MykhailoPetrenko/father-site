@@ -1,6 +1,9 @@
 import React from "react";
-
-const SearchIcon = () => {
+type SearchIcon = {
+  width: string;
+  height: string;
+}
+const SearchIcon = ({ width, height }: SearchIcon) => {
   return (
     <svg
       version="1.1"
@@ -12,7 +15,9 @@ const SearchIcon = () => {
       viewBox="0 0 512.005 512.005"
       enableBackground={"new 0 0 512.005 512.005"}
       xmlSpace="preserve"
-      className="header-nav-icon__item"
+      width={width}
+      height={height}
+      // fill={"white"}
     >
       <g>
         <g>
