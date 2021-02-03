@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 
 interface ISlickSlider {
-  children: JSX.Element[];
+  children: JSX.Element[] | any;
   settings: any;
 }
 const SlickSlider = ({ children, settings }: ISlickSlider) => {

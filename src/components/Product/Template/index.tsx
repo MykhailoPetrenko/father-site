@@ -4,16 +4,17 @@ import Image from "../Image";
 import Demand from "../Demand";
 import Like from "../Like";
 import {Link} from "react-router-dom";
+import {IProduct} from "../../../types/product";
 
 type ProductTemplate = {
-  isHot: boolean;
+    product: IProduct;
 };
-const ProductTemplate = ({ isHot }: ProductTemplate) => {
+const ProductTemplate = ({ product }: ProductTemplate) => {
   return (
-    <div className={`template__wrapper ${isHot ? "template__wrapper--hot" : ""}`}>
-        <Link to="/product">
-            <Image isHot={isHot}/>
-            <Info isHot={isHot}/>
+    <div className={`template__wrapper ${product.isHot? "template__wrapper--hot" : ""}`}>
+        <Link to={`/product/${product.id}`}>
+            <Image image={product.images[0]} popular={product.isHot}/>
+            <Info product={product}/>
             <Demand />
             <Like />
         </Link>

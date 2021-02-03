@@ -1,57 +1,68 @@
 import React from "react";
 import Material from "./Material";
+import { IProduct } from "../../../types/product";
 
 type Info = {
-  isHot: boolean;
+  product: IProduct;
 };
-const Info = ({ isHot }: Info) => {
+const Info = ({ product }: Info) => {
   return (
     <div className="template-info__wrapper">
       <div
         className={`template-info__inner ${
-          isHot ? "template-info__inner--hot" : ""
+          product.isHot ? "template-info__inner--hot" : ""
         }`}
       >
         <div className="template-info__category--wrapper">
           <a className="template-info__category" href="#">
-            Для дома
+            {product.usage}
           </a>
         </div>
         <h3 className="template-info__name">
           <a className="template-info__link product-name" href="#">
-            Прочный стул
+            {product.productName}
           </a>
         </h3>
         <div
           className={`template-materials__wrapper ${
-            isHot ? "template-materials__wrapper--hot" : ""
+            product.isHot ? "template-materials__wrapper--hot" : ""
           }`}
         >
-          <div className="template-material__wrapper template-material__small">
-            <Material name="Дерево" />
-          </div>
-          <div className="template-material__wrapper template-material__small">
-            <Material name="Дерево" />
-          </div>
-          <div className="template-material__wrapper template-material__small">
-            <Material name="Дерево" />
-          </div>
+          {product.materials.map((material: string) => (
+            <div className="template-material__wrapper template-material__small">
+              <Material name={material} />
+            </div>
+          ))}
         </div>
-        <div
-          className={`template-price__wrapper ${
-            isHot ? "template-price__wrapper--hot" : ""
-          }`}
-        >
-          <span className="sr-only">Обычная цена</span>
-          <span className="template-price template-price--regular">
-            &#8381;1600
-          </span>
-          <span className="sr-only">Цена</span>
-          <span className="template-price template-price--sale">
-            &#8381;1200
-          </span>
-          <span className="template-price__discount">-25%</span>
-        </div>
+        {product.price.discount ? (
+          <div
+            className={`template-price__wrapper ${
+              product.isHot ? "template-price__wrapper--hot" : ""
+            }`}
+          >
+            <span className="sr-only">Обычная цена</span>
+            <span className="template-price template-price--regular">
+              &#8381;{product.price.quantity}
+            </span>
+            <span className="sr-only">Цена</span>
+            <span className="template-price template-price--sale">
+              &#8381;{product.price.quantity * product.price.discount}
+            </span>
+            <span className="template-price__discount">
+              -{product.price.discount * 100}%
+            </span>
+          </div>
+        ) : (
+          <div
+            className={`template-price__wrapper ${
+              product.isHot ? "template-price__wrapper--hot" : ""
+            }`}
+          >
+            <span className="template-price">
+              &#8381;{product.price.quantity}
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );

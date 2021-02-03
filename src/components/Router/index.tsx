@@ -11,7 +11,7 @@ const Router = () => {
                 <NavBar />
                 <Switch>
                     <Route path={"/"} component={Main} exact/>
-                    <Route path={"/product"} component={Product}/>
+                    <Route path={"/product/:productId"} component={Product}/>
                 </Switch>
             </div>
         </BrowserRouter>
