@@ -86,81 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
-  \************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
-  \******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inheritsLoose; });
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-/***/ }),
-
 /***/ "./node_modules/classnames/index.js":
 /*!******************************************!*\
   !*** ./node_modules/classnames/index.js ***!
@@ -703,7 +628,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "locationsAreEqual", function() { return locationsAreEqual; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parsePath", function() { return parsePath; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createPath", function() { return createPath; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/history/node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var resolve_pathname__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! resolve-pathname */ "./node_modules/resolve-pathname/esm/resolve-pathname.js");
 /* harmony import */ var value_equal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! value-equal */ "./node_modules/value-equal/esm/value-equal.js");
 /* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tiny-warning */ "./node_modules/tiny-warning/dist/tiny-warning.esm.js");
@@ -1631,6 +1556,36 @@ function createMemoryHistory(props) {
 
 /***/ }),
 
+/***/ "./node_modules/history/node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/history/node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
 /***/ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
 /*!**********************************************************************************!*\
   !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
@@ -2207,7 +2162,7 @@ module.exports = debounce;
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/mini-create-react-context/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tiny-warning */ "./node_modules/tiny-warning/dist/tiny-warning.esm.js");
@@ -2389,6 +2344,47 @@ var index = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext || create
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/mini-create-react-context/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/mini-create-react-context/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inheritsLoose; });
+/* harmony import */ var _babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/setPrototypeOf */ "./node_modules/mini-create-react-context/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  Object(_babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/mini-create-react-context/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/mini-create-react-context/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
 
 /***/ }),
 
@@ -24894,15 +24890,15 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return react_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"]; });
 
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! history */ "./node_modules/history/esm/history.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tiny-warning */ "./node_modules/tiny-warning/dist/tiny-warning.esm.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tiny-invariant */ "./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
 
 
@@ -25224,6 +25220,104 @@ if (true) {
 
 /***/ }),
 
+/***/ "./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
+  \************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inheritsLoose; });
+/* harmony import */ var _babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/setPrototypeOf */ "./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  Object(_babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
+/*!***************************************************************************************************************!*\
+  !*** ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \***************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/react-router-dom/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
 /***/ "./node_modules/react-router/esm/react-router.js":
 /*!*******************************************************!*\
   !*** ./node_modules/react-router/esm/react-router.js ***!
@@ -25249,7 +25343,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useParams", function() { return useParams; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useRouteMatch", function() { return useRouteMatch; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return withRouter; });
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -25258,12 +25352,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tiny-warning */ "./node_modules/tiny-warning/dist/tiny-warning.esm.js");
 /* harmony import */ var mini_create_react_context__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! mini-create-react-context */ "./node_modules/mini-create-react-context/dist/esm/index.js");
 /* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tiny-invariant */ "./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! path-to-regexp */ "./node_modules/react-router/node_modules/path-to-regexp/index.js");
 /* harmony import */ var path_to_regexp__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(path_to_regexp__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 /* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_11__);
 
@@ -26036,6 +26130,104 @@ if (true) {
 
 
 
+
+/***/ }),
+
+/***/ "./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inheritsLoose; });
+/* harmony import */ var _babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/setPrototypeOf */ "./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  Object(_babel_runtime_helpers_esm_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \***********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/react-router/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
 
 /***/ }),
 
@@ -34613,6 +34805,31 @@ const Sandwich = () => {
 
 /***/ }),
 
+/***/ "./src/components/SlickNavSlider/index.tsx":
+/*!*************************************************!*\
+  !*** ./src/components/SlickNavSlider/index.tsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const SlickNavSlider = ({ children, settings, nav, navRef, }) => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null,
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "main-category__wrapper" },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_1___default.a, Object.assign({ ref: navRef, asNavFor: nav }, settings), children))));
+};
+/* harmony default export */ __webpack_exports__["default"] = (SlickNavSlider);
+
+
+/***/ }),
+
 /***/ "./src/components/SlickSlider/index.tsx":
 /*!**********************************************!*\
   !*** ./src/components/SlickSlider/index.tsx ***!
@@ -35175,14 +35392,620 @@ const Main = () => {
 
 /***/ }),
 
+/***/ "./src/pages/Product/ImageSlide/Image/index.tsx":
+/*!******************************************************!*\
+  !*** ./src/pages/Product/ImageSlide/Image/index.tsx ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Image = ({ image }) => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-info__image--wrapper" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { className: "product-info__image", src: `/${image.link}`, alt: image.alt })));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Image);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/ImageSlide/MainSlider/index.tsx":
+/*!***********************************************************!*\
+  !*** ./src/pages/Product/ImageSlide/MainSlider/index.tsx ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Image */ "./src/pages/Product/ImageSlide/Image/index.tsx");
+/* harmony import */ var _components_SlickNavSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../components/SlickNavSlider */ "./src/components/SlickNavSlider/index.tsx");
+
+
+
+const settingsBig = {
+    dots: false,
+    infinite: false,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+};
+const MainSlider = ({ images, navRef, nav }) => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SlickNavSlider__WEBPACK_IMPORTED_MODULE_2__["default"], { navRef: navRef, nav: nav, settings: settingsBig }, images.map((img) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Image__WEBPACK_IMPORTED_MODULE_1__["default"], { image: img })))));
+};
+/* harmony default export */ __webpack_exports__["default"] = (MainSlider);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/ImageSlide/NavSlider/index.tsx":
+/*!**********************************************************!*\
+  !*** ./src/pages/Product/ImageSlide/NavSlider/index.tsx ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SmallImage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SmallImage */ "./src/pages/Product/ImageSlide/SmallImage/index.tsx");
+/* harmony import */ var _components_SlickNavSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../components/SlickNavSlider */ "./src/components/SlickNavSlider/index.tsx");
+
+
+
+const NavSlider = ({ images, nav, navRef }) => {
+    const settingsSmall = {
+        dots: false,
+        infinite: false,
+        focusOnSelect: true,
+        arrows: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SlickNavSlider__WEBPACK_IMPORTED_MODULE_2__["default"], { navRef: navRef, nav: nav, settings: settingsSmall }, images.map((img) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SmallImage__WEBPACK_IMPORTED_MODULE_1__["default"], { image: img })))));
+};
+/* harmony default export */ __webpack_exports__["default"] = (NavSlider);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/ImageSlide/SmallImage/index.tsx":
+/*!***********************************************************!*\
+  !*** ./src/pages/Product/ImageSlide/SmallImage/index.tsx ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const SmallImage = ({ image }) => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-info__small-image--wrapper" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { className: "product-info__small-image", src: `/${image.link}`, alt: image.alt })));
+};
+/* harmony default export */ __webpack_exports__["default"] = (SmallImage);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/ImageSlide/index.tsx":
+/*!************************************************!*\
+  !*** ./src/pages/Product/ImageSlide/index.tsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _MainSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MainSlider */ "./src/pages/Product/ImageSlide/MainSlider/index.tsx");
+/* harmony import */ var _NavSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavSlider */ "./src/pages/Product/ImageSlide/NavSlider/index.tsx");
+/* harmony import */ var _components_Product_Demand__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/Product/Demand */ "./src/components/Product/Demand/index.tsx");
+
+
+
+
+const ImageSlide = ({ images }) => {
+    const [navSmall, setNavSmall] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+    const [navMain, setNavMain] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+    const navRefSmall = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+    const navRefMain = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {
+        setNavSmall(navRefSmall.current);
+        setNavMain(navRefMain.current);
+    }, []);
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-info__block" }, images ? (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null,
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-info__slider" },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MainSlider__WEBPACK_IMPORTED_MODULE_1__["default"], { nav: navSmall, navRef: navRefMain, images: images })),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-info__slider" },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavSlider__WEBPACK_IMPORTED_MODULE_2__["default"], { nav: navMain, navRef: navRefSmall, images: images })),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Product_Demand__WEBPACK_IMPORTED_MODULE_3__["default"], null))) : ("")));
+};
+/* harmony default export */ __webpack_exports__["default"] = (ImageSlide);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/Info/Button/index.tsx":
+/*!*************************************************!*\
+  !*** ./src/pages/Product/Info/Button/index.tsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Button = () => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-buy" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-buy__button" }, "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0443")));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Button);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/Info/Category/index.tsx":
+/*!***************************************************!*\
+  !*** ./src/pages/Product/Info/Category/index.tsx ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Category = ({ name }) => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "template-info__category--wrapper" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { className: "template-info__category product__category", href: "#" }, name)));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Category);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/Info/Description/index.tsx":
+/*!******************************************************!*\
+  !*** ./src/pages/Product/Info/Description/index.tsx ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Description = ({ description }) => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product__description" }, description);
+};
+/* harmony default export */ __webpack_exports__["default"] = (Description);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/Info/Materials/index.tsx":
+/*!****************************************************!*\
+  !*** ./src/pages/Product/Info/Materials/index.tsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Product_Info_Material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../components/Product/Info/Material */ "./src/components/Product/Info/Material/index.tsx");
+
+
+const Materials = ({ materials }) => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "template-materials__wrapper product-material--wrapper" }, materials.map((material) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "template-material__wrapper product-material" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Product_Info_Material__WEBPACK_IMPORTED_MODULE_1__["default"], { name: "\u0414\u0435\u0440\u0435\u0432\u043E" }))))));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Materials);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/Info/Name/index.tsx":
+/*!***********************************************!*\
+  !*** ./src/pages/Product/Info/Name/index.tsx ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Name = ({ name }) => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", { className: "template-info__name" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-name" }, name)));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Name);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/Info/Price/index.tsx":
+/*!************************************************!*\
+  !*** ./src/pages/Product/Info/Price/index.tsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const Price = () => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "template-price__wrapper product-price" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: "sr-only" }, "\u041E\u0431\u044B\u0447\u043D\u0430\u044F \u0446\u0435\u043D\u0430"),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: "template-price template-price--regular" }, "\u20BD1600"),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: "sr-only" }, "\u0426\u0435\u043D\u0430"),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: "template-price template-price--sale" }, "\u20BD1200"),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: "template-price__discount" }, "-25%")));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Price);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/Info/WishList/index.tsx":
+/*!***************************************************!*\
+  !*** ./src/pages/Product/Info/WishList/index.tsx ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../components */ "./src/components/index.ts");
+
+
+const WishList = () => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-actions__wishlist" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__["LikeIcon"], { width: "15px", height: "15px" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-actions__text" }, "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0432 \u043F\u043E\u043D\u0440\u0430\u0432\u0438\u0432\u0448\u0435\u0435\u0441\u044F")));
+};
+/* harmony default export */ __webpack_exports__["default"] = (WishList);
+
+
+/***/ }),
+
+/***/ "./src/pages/Product/Info/index.tsx":
+/*!******************************************!*\
+  !*** ./src/pages/Product/Info/index.tsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Name__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Name */ "./src/pages/Product/Info/Name/index.tsx");
+/* harmony import */ var _Category__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Category */ "./src/pages/Product/Info/Category/index.tsx");
+/* harmony import */ var _Materials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Materials */ "./src/pages/Product/Info/Materials/index.tsx");
+/* harmony import */ var _Price__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Price */ "./src/pages/Product/Info/Price/index.tsx");
+/* harmony import */ var _Description__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Description */ "./src/pages/Product/Info/Description/index.tsx");
+/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Button */ "./src/pages/Product/Info/Button/index.tsx");
+/* harmony import */ var _WishList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./WishList */ "./src/pages/Product/Info/WishList/index.tsx");
+
+
+
+
+
+
+
+
+const Info = () => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-info__block" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Name__WEBPACK_IMPORTED_MODULE_1__["default"], { name: "\u041F\u0440\u043E\u0447\u043D\u044B\u0439 \u0441\u0442\u0443\u043B" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Category__WEBPACK_IMPORTED_MODULE_2__["default"], { name: "\u0414\u043B\u044F \u0434\u043E\u043C\u0430" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Materials__WEBPACK_IMPORTED_MODULE_3__["default"], { materials: ["Дерево", "Дерево", "Дерево"] }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Price__WEBPACK_IMPORTED_MODULE_4__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Description__WEBPACK_IMPORTED_MODULE_5__["default"], { description: "Архитектор В. П. Стасов (1769—1848) в конце 1810-х изобрёл новую конструкцию стула и кресла с выразительным профилем — так называемую «боковую раму». При такой конструкции передняя и задняя ножки и стойки спинки образуют единую боковую раму, две такие рамы соединялись между собой двумя поперечными брусками, а стойки спинки — поперечной плоскостью; боковины облицовывались шпоном так, что создавалось впечатление цельного куска дерева. Для таких стульев использовалось вкладное сиденье в форме трапеции." }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-actions" },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_WishList__WEBPACK_IMPORTED_MODULE_7__["default"], null),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_6__["default"], null))));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Info);
+
+
+/***/ }),
+
 /***/ "./src/pages/Product/index.tsx":
 /*!*************************************!*\
   !*** ./src/pages/Product/index.tsx ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module parse failed: Unexpected token (251:74)\nYou may need an appropriate loader to handle this file type.\n|                 React.createElement(\"div\", { className: \"container container--wrapper\" },\r\n|                     React.createElement(\"div\", { className: \"product-info--wrapper \" },\r\n>                         React.createElement(ImageSlide, { images: product?.images }),\r\n|                         React.createElement(Info, null)))))));\r\n| };\r");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components */ "./src/components/index.ts");
+/* harmony import */ var _ImageSlide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ImageSlide */ "./src/pages/Product/ImageSlide/index.tsx");
+/* harmony import */ var _Info__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Info */ "./src/pages/Product/Info/index.tsx");
+
+
+
+
+const Product = ({ match }) => {
+    const breadCrumbs = [
+        { name: "Главная", link: "/" },
+        { name: "Стулья", link: "/chairs" },
+        { name: "Деревянный стул", link: "#" },
+    ];
+    const [product, setProduct] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+    const products = [
+        {
+            id: "1",
+            productName: "Прочный стул",
+            category: {
+                imageLink: __webpack_require__(/*! ../../public/images/content/products/chairs/chair1/IMG_7862.png */ "./src/public/images/content/products/chairs/chair1/IMG_7862.png")
+                    .default,
+                name: "Стулья",
+                quantity: " 12",
+            },
+            images: [
+                {
+                    link: __webpack_require__(/*! ./../../public/images/content/products/chairs/chair1/IMG_7859.png */ "./src/public/images/content/products/chairs/chair1/IMG_7859.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ./../../public/images/content/products/chairs/chair1/IMG_7860.png */ "./src/public/images/content/products/chairs/chair1/IMG_7860.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/chairs/chair1/IMG_7861.png */ "./src/public/images/content/products/chairs/chair1/IMG_7861.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/chairs/chair1/IMG_7862.png */ "./src/public/images/content/products/chairs/chair1/IMG_7862.png")
+                        .default,
+                    alt: "123",
+                },
+            ],
+            materials: ["Дерево", "Дерево", "Дерево"],
+            price: { quantity: 2500, discount: 0.25 },
+            description: "Архитектор В. П. Стасов (1769—1848) в конце 1810-х изобрёл новую конструкцию стула и кресла с выразительным профилем — так называемую «боковую раму». При такой конструкции передняя и задняя ножки и стойки спинки образуют единую боковую раму, две такие рамы соединялись между собой двумя поперечными брусками, а стойки спинки — поперечной плоскостью; боковины облицовывались шпоном так, что создавалось впечатление цельного куска дерева. Для таких стульев использовалось вкладное сиденье в форме трапеции.",
+            usage: "Для дома",
+            popular: true,
+            isHot: true,
+        },
+        {
+            id: "2",
+            productName: "Чаша золотая",
+            category: {
+                imageLink: __webpack_require__(/*! ../../public/images/content/products/bowls/IMG_7830.png */ "./src/public/images/content/products/bowls/IMG_7830.png")
+                    .default,
+                name: "Чаши",
+                quantity: "7",
+            },
+            images: [
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/bowls/IMG_7830.png */ "./src/public/images/content/products/bowls/IMG_7830.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/bowls/IMG_7829.png */ "./src/public/images/content/products/bowls/IMG_7829.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/bowls/IMG_7831.png */ "./src/public/images/content/products/bowls/IMG_7831.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/bowls/IMG_7832.png */ "./src/public/images/content/products/bowls/IMG_7832.png")
+                        .default,
+                    alt: "123",
+                },
+            ],
+            materials: ["Дерево", "Дерево", "Дерево"],
+            price: { quantity: 2500, discount: 0.25 },
+            description: "Архитектор В. П. Стасов (1769—1848) в конце 1810-х изобрёл новую конструкцию стула и кресла с выразительным профилем — так называемую «боковую раму». При такой конструкции передняя и задняя ножки и стойки спинки образуют единую боковую раму, две такие рамы соединялись между собой двумя поперечными брусками, а стойки спинки — поперечной плоскостью; боковины облицовывались шпоном так, что создавалось впечатление цельного куска дерева. Для таких стульев использовалось вкладное сиденье в форме трапеции.",
+            usage: "Для дома",
+            popular: true,
+            isHot: true,
+        },
+        {
+            id: "3",
+            productName: "Супер корзина",
+            category: {
+                imageLink: __webpack_require__(/*! ./../../public/images/content/products/basket/IMG_7838.png */ "./src/public/images/content/products/basket/IMG_7838.png")
+                    .default,
+                name: "Корзины",
+                quantity: "5",
+            },
+            images: [
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/basket/IMG_7838.png */ "./src/public/images/content/products/basket/IMG_7838.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/basket/IMG_7835.png */ "./src/public/images/content/products/basket/IMG_7835.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/basket/IMG_7837.png */ "./src/public/images/content/products/basket/IMG_7837.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/basket/IMG_7839.png */ "./src/public/images/content/products/basket/IMG_7839.png")
+                        .default,
+                    alt: "123",
+                },
+            ],
+            materials: ["Дерево", "Дерево", "Дерево"],
+            price: { quantity: 2500, discount: 0.25 },
+            description: "Архитектор В. П. Стасов (1769—1848) в конце 1810-х изобрёл новую конструкцию стула и кресла с выразительным профилем — так называемую «боковую раму». При такой конструкции передняя и задняя ножки и стойки спинки образуют единую боковую раму, две такие рамы соединялись между собой двумя поперечными брусками, а стойки спинки — поперечной плоскостью; боковины облицовывались шпоном так, что создавалось впечатление цельного куска дерева. Для таких стульев использовалось вкладное сиденье в форме трапеции.",
+            usage: "Для дома",
+            popular: true,
+            isHot: false,
+        },
+        {
+            id: "4",
+            productName: "Тарелка",
+            category: {
+                imageLink: __webpack_require__(/*! ../../public/images/content/products/plates/IMG_7843.png */ "./src/public/images/content/products/plates/IMG_7843.png")
+                    .default,
+                name: "Тарелки",
+                quantity: " 3",
+            },
+            images: [
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/plates/IMG_7843.png */ "./src/public/images/content/products/plates/IMG_7843.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/plates/IMG_7847.png */ "./src/public/images/content/products/plates/IMG_7847.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/plates/IMG_7849.png */ "./src/public/images/content/products/plates/IMG_7849.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/plates/IMG_7850.png */ "./src/public/images/content/products/plates/IMG_7850.png")
+                        .default,
+                    alt: "123",
+                },
+            ],
+            materials: ["Дерево", "Дерево", "Дерево"],
+            price: { quantity: 2500, discount: null },
+            description: "Архитектор В. П. Стасов (1769—1848) в конце 1810-х изобрёл новую конструкцию стула и кресла с выразительным профилем — так называемую «боковую раму». При такой конструкции передняя и задняя ножки и стойки спинки образуют единую боковую раму, две такие рамы соединялись между собой двумя поперечными брусками, а стойки спинки — поперечной плоскостью; боковины облицовывались шпоном так, что создавалось впечатление цельного куска дерева. Для таких стульев использовалось вкладное сиденье в форме трапеции.",
+            usage: "Для дома",
+            popular: true,
+            isHot: false,
+        },
+        {
+            id: "5",
+            productName: "Кресло царское",
+            category: {
+                imageLink: __webpack_require__(/*! ../../public/images/content/products/armchairs/armchair1/IMG_7884.png */ "./src/public/images/content/products/armchairs/armchair1/IMG_7884.png")
+                    .default,
+                name: "Кресла",
+                quantity: "7",
+            },
+            images: [
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/armchairs/armchair1/IMG_7884.png */ "./src/public/images/content/products/armchairs/armchair1/IMG_7884.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/armchairs/armchair1/IMG_7883.png */ "./src/public/images/content/products/armchairs/armchair1/IMG_7883.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/armchairs/armchair1/IMG_7885.png */ "./src/public/images/content/products/armchairs/armchair1/IMG_7885.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/armchairs/armchair1/IMG_7886.png */ "./src/public/images/content/products/armchairs/armchair1/IMG_7886.png")
+                        .default,
+                    alt: "123",
+                },
+            ],
+            materials: ["Дерево", "Дерево", "Дерево"],
+            price: { quantity: 2500, discount: 0.25 },
+            description: "Архитектор В. П. Стасов (1769—1848) в конце 1810-х изобрёл новую конструкцию стула и кресла с выразительным профилем — так называемую «боковую раму». При такой конструкции передняя и задняя ножки и стойки спинки образуют единую боковую раму, две такие рамы соединялись между собой двумя поперечными брусками, а стойки спинки — поперечной плоскостью; боковины облицовывались шпоном так, что создавалось впечатление цельного куска дерева. Для таких стульев использовалось вкладное сиденье в форме трапеции.",
+            usage: "Для дома",
+            popular: true,
+            isHot: false,
+        },
+        {
+            id: "6",
+            productName: "Лампа Луна",
+            category: {
+                imageLink: __webpack_require__(/*! ../../public/images/content/products/lamps/lamp1/IMG_7880.png */ "./src/public/images/content/products/lamps/lamp1/IMG_7880.png")
+                    .default,
+                name: "Лампы",
+                quantity: "2",
+            },
+            images: [
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/lamps/lamp1/IMG_7880.png */ "./src/public/images/content/products/lamps/lamp1/IMG_7880.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/lamps/lamp1/IMG_7881.png */ "./src/public/images/content/products/lamps/lamp1/IMG_7881.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/lamps/lamp1/IMG_7882.png */ "./src/public/images/content/products/lamps/lamp1/IMG_7882.png")
+                        .default,
+                    alt: "123",
+                },
+                {
+                    link: __webpack_require__(/*! ../../public/images/content/products/lamps/lamp1/IMG_7880.png */ "./src/public/images/content/products/lamps/lamp1/IMG_7880.png")
+                        .default,
+                    alt: "123",
+                },
+            ],
+            materials: ["Дерево", "Дерево", "Дерево"],
+            price: { quantity: 2500, discount: null },
+            description: "Архитектор В. П. Стасов (1769—1848) в конце 1810-х изобрёл новую конструкцию стула и кресла с выразительным профилем — так называемую «боковую раму». При такой конструкции передняя и задняя ножки и стойки спинки образуют единую боковую раму, две такие рамы соединялись между собой двумя поперечными брусками, а стойки спинки — поперечной плоскостью; боковины облицовывались шпоном так, что создавалось впечатление цельного куска дерева. Для таких стульев использовалось вкладное сиденье в форме трапеции.",
+            usage: "Для дома",
+            popular: true,
+            isHot: false
+        },
+    ];
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {
+        console.log((products.find((item) => item.id === match.params.templateId)));
+        setProduct(products.find((item) => item.id === match.params.productId));
+        console.log(product);
+    }, [match.params.templateId]);
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null,
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product" },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "container" },
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__["BreadCrumbs"], { breadCrumbs: breadCrumbs }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "container container--wrapper" },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "product-info--wrapper " },
+                        product ? (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ImageSlide__WEBPACK_IMPORTED_MODULE_2__["default"], { images: product.images })) : "",
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Info__WEBPACK_IMPORTED_MODULE_3__["default"], null)))))));
+};
+/* harmony default export */ __webpack_exports__["default"] = (Product);
+
 
 /***/ }),
 
@@ -35199,8 +36022,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Main", function() { return _Main__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 /* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Product */ "./src/pages/Product/index.tsx");
-/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Product__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "Product", function() { return _Product__WEBPACK_IMPORTED_MODULE_1___default.a; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Product", function() { return _Product__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
 
 
 
