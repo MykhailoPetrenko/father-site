@@ -1,7 +1,10 @@
 .main{
   &-intro{
-    height: 530px;
+    height: 370px;
     position: relative;
+    @media screen and (max-width: 768px){
+      height: 250px;
+    }
     &__blind{
       height: 100%;
       width: 100%;
@@ -12,6 +15,40 @@
     &__image{
       height: 100%;
       background: #314e24 url("https://m.dw.com/image/43443269_403.jpg") center ;
+    }
+    &__item{
+      left: 16%;
+      margin: 0;
+      position: absolute;
+      transform: translate(0, -50%);
+    }
+    &__button {
+      top: 51%;
+      width: 183px;
+      text-decoration: none;
+      @media screen and (max-width: 768px){
+        top: 60%;
+        left: 5%;
+      }
+    }
+    &__text {
+      color: white;
+      text-transform: capitalize;
+      white-space: nowrap;
+      @media screen and (max-width: 768px){
+        left: 5%;
+      }
+      &--big{
+        top: 28%;
+        font-size: 42px;
+      }
+      &--small{
+        top: 38%;
+        font-size: 20px;
+        @media screen and (max-width: 768px){
+          top: 43%;
+        }
+      }
     }
   }
 }

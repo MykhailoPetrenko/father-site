@@ -4,6 +4,7 @@ import tree from "../../public/images/svg/tree.png";
 import {LikeIcon, Sandwich, SearchIcon} from "../index";
 import { Link } from "react-router-dom";
 import Search from "./Search";
+import {Basket} from "../Icons";
 
 const NavBar = () => {
   return (
@@ -40,6 +41,9 @@ const NavBar = () => {
                 </li>
                 <li className="header-nav__item">
                   <LikeIcon width={"25px"} height={"25px"} />
+                </li>
+                <li className="header-nav__item">
+                  <Basket/>
                 </li>
               </ul>
             </nav>
