@@ -6,11 +6,11 @@ module.exports = {
   entry: ["./src/index.tsx", "./src/styles/index.scss"],
   output: {
     filename: "bundle.js",
-    path: path.join(__dirname, "out"),
+    path: path.join(__dirname, "build"),
   },
 
   devServer: {
-    contentBase: path.join(__dirname, "out"),
+    contentBase: path.join(__dirname, "build"),
     compress: true,
     historyApiFallback: true,
     hot: true,

@@ -27,9 +27,13 @@
     "webpack-dev-server": "^3.4.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
     "@types/react": "^16.8.18",
     "@types/react-dom": "^16.8.4",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.5",
     "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^2.1.1",
@@ -50,6 +54,8 @@
   "scripts": {
     "compile": "webpack",
     "serve": "webpack-dev-server --open",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   }
 }
